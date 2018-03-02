@@ -1,0 +1,48 @@
+example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+/* Put your css in here */
+
+main {
+  overflow-y: auto;
+}
+
+.example-card {
+  max-width: 600px;
+}
+
+.example-header-image {
+  background-image: url('https://www.shareicon.net/download/2016/11/22/855163_video_512x512.png');
+  background-size: cover;
+}
+
+example-form {
+  min-width: 150px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.example-full-width {
+  max-width: 600px;
+}

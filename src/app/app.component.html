@@ -1,0 +1,64 @@
+
+  <mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Teste Angular - Higor Douglas</span>
+
+    <span class="example-spacer"></span>
+    
+    <button mat-button>Sobre</button>
+    <button mat-button>Serviços</button>
+    <button mat-button>Contato</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-6">
+
+<form [formGroup]="searchForm">
+  <br />
+  <mat-form-field class="example-full-width">
+  <input matInput class="example-full-width" placeholder="Digite o título que deseja buscar" formControlName="search" id="search" />
+  </mat-form-field>
+    <button mat-button color="primary" type="submit">Pesquisar</button>
+<br />
+  <div *ngFor="let result of results | async">
+    
+<br />
+
+    <mat-card class="example-card">
+
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-subtitle></mat-card-subtitle>
+
+    <mat-card-title>
+      {{result.snippet.title}}
+    </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="result.snippet.thumbnails.medium.url">
+  <mat-card-content>
+        <p>{{result.snippet.description}}</p>
+
+  </mat-card-content>
+  <mat-card-actions>
+<a mat-button target="_blank" [href]="'https://www.youtube.com/watch?v=' + result.id.videoId">ASSISTIR</a>
+
+  </mat-card-actions>
+</mat-card>
+<br>
+  </div>
+</form>
+</div>
+</div>
+</div>
+ 
+<br />
+
+      <mat-toolbar color='primary'>
+  <span class='spacer'></span>
+    <h3>Footer de exemplo</h3>
+  <span class='spacer'></span>
+</mat-toolbar>
